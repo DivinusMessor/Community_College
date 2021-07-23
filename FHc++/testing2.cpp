@@ -1,13 +1,19 @@
 #include <iostream>
 using namespace std;
+// Testing on how to do the vowels
 
-float sum(float a, float b);
-
-int main(){
-    cout << "Using functions------------------------------------------------" << endl;
-    cout << sum(2.2, 5) << endl;
+void enter(){
+    cout << "What?" << endl;
+    for (;;){
+        string answer;
+        getline(cin, answer);
+        if (answer.empty()){
+            enter();
+        }
+        cout << "    " << answer << endl;
+    }
 }
 
-float sum(float a, float b){
-    return a + b;
+int main(){
+    enter();
 }
