@@ -23,16 +23,24 @@ string rotate_vowels(string strg){
     // go to that website and see how its done to switch
     char vowels[5] = {'a','e','i','o','u'}; 
     for (int i=0; i<strg.length(); i++){
-        if (strg[i] == vowels){
-            strg.replace(i, 1, "th");;
-        } 
-        else if (strg[i] == 'S'){
-            strg.replace(i, 1, "Th");
+        if (strg[i] == 'a') {
+            strg[i] = 'e';
         }
-    }
+        else if (strg[i] == 'e') {
+            strg[i] = 'i';
+        }
+        else if (strg[i] == 'i') {
+            strg[i] = 'o';
+        }
+        else if (strg[i] == 'o') {
+            strg[i] = 'u';
+        }
+        else if (strg[i] == 'u') {
+            strg[i] = 'a';
+        }
+    } 
     return strg;
-} 
- 
+}
 // Return a string in which all occurrences of s have been replaced by th 
 // TODO - Your code for lispify goes here 
 string lispify(string strg){
@@ -56,6 +64,6 @@ void enter() {
 int main(){
     //cout << rotate_vowels("hats");
     //cout << lispify("sixSix");
-    cout << lispify("sAXsACKssS");
-
+    //cout << lispify("sAXsACKssS");
+    //cout << rotate_vowels("that's really cool");
 }
