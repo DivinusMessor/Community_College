@@ -21,8 +21,8 @@ using namespace std;
 string rotate_vowels(string strg){
     //https://stackoverflow.com/questions/21358215/how-to-compare-string-to-multiple-char-c
     // go to that website and see how its done to switch
-    char vowels[5] = {'a','e','i','o','u'}; 
-    for (unsigned int i=0; i<strg.length(); i++){
+    //char vowels[5] = {'a','e','i','o','u'}; 
+    for ( int i=0; i<6; i++){
         if (strg[i] == 'a') {
             strg[i] = 'e';
         }
@@ -44,7 +44,7 @@ string rotate_vowels(string strg){
 // Return a string in which all occurrences of s have been replaced by th 
 // TODO - Your code for lispify goes here 
 string lispify(string strg){
-    for (unsigned int i=0; i<strg.length(); i++){
+    for ( int i=0; i<6; i++){
         if (strg[i] == 's'){
             strg.replace(i, 1, "th");;
         } 
@@ -68,7 +68,7 @@ void enter(){
             cout << "OMG! You don't say!!  " << answer << "!!!!!" << endl;
             enter();
         }
-        else if (answer == "what?" | answer == "why?"){
+        else if ((answer == "what?") | (answer == "why?")){
             cout << "I'm sorry, I don't like questions that contain what or why." << endl;
             enter();
         }   
@@ -77,7 +77,7 @@ void enter(){
             cout << lispify(answer) << "! Sheesh! Now what?"  << endl;
             enter();
         }
-        else if (answer == "bye" | answer == "quit" | answer == "Bye" | answer == "Quit"){
+        else if ((answer == "bye") | (answer == "quit") | (answer == "Bye") | (answer == "Quit")){
             cout << "Ok Bye. Nice being a force of change in your life." << endl;
             break;
         }
