@@ -56,9 +56,43 @@ string lispify(string strg){
 }
  
 // Enter the user-interaction loop as described earlier 
-void enter() { 
-    // TODO - Your code here 
-    ;
+void enter(){
+    cout << "What?" << endl;
+    for (;;){
+        string answer;
+        getline(cin, answer);
+        if (answer.empty()){
+            enter();
+        }
+        else if (answer.find('!') != std::string::npos){
+            cout << "OMG! You don't say!!  " << answer << "!!!!!" << endl;
+            enter();
+        }
+        else if (answer == "what?" | answer == "why?"){
+            cout << "I'm sorry, I don't like questions that contain what or why." << endl;
+            enter();
+        }   
+        else if (answer.find('s') != std::string::npos){
+            cout << "Interethting. When did you thtop thtopping your thibilanth?" << endl;
+            cout << lispify(answer) << "! Sheesh! Now what?"  << endl;
+            enter();
+        }
+        else if (answer == "bye" | answer == "quit" | answer == "Bye" | answer == "Quit"){
+            cout << "Ok Bye. Nice being a force of change in your life." << endl;
+            break;
+        }
+        if (rand() % 10 >= 8){
+            cout << "Huh? Why do you say: " << answer << "?" << endl;
+        }
+        
+        else{
+            cout << rotate_vowels(answer) << "?" << endl;
+        }
+        cout << "    " << answer << endl;
+        cout << endl;
+        cout << endl;
+        
+    }
 }
 
 int main(){
@@ -66,4 +100,5 @@ int main(){
     //cout << lispify("sixSix");
     //cout << lispify("sAXsACKssS");
     //cout << rotate_vowels("that's really cool");
+    enter();
 }
