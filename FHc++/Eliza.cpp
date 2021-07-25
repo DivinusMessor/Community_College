@@ -22,7 +22,7 @@ string rotate_vowels(string strg){
     //https://stackoverflow.com/questions/21358215/how-to-compare-string-to-multiple-char-c
     // go to that website and see how its done to switch
     char vowels[5] = {'a','e','i','o','u'}; 
-    for (int i=0; i<strg.length(); i++){
+    for (unsigned int i=0; i<strg.length(); i++){
         if (strg[i] == 'a') {
             strg[i] = 'e';
         }
