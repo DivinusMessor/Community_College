@@ -44,7 +44,7 @@ string rotate_vowels(string strg){
 // Return a string in which all occurrences of s have been replaced by th 
 // TODO - Your code for lispify goes here 
 string lispify(string strg){
-    for ( int i=0; i<6; i++){
+    for (unsigned int i=0; i<strg.length(); i++){
         if (strg[i] == 's'){
             strg.replace(i, 1, "th");
         } 

@@ -3,34 +3,18 @@
 using namespace std;
 // Testing on how to do the vowels
 
-void enter(){
-    cout << "What?" << endl;
-    for (;;){
-        string answer;
-        getline(cin, answer);
-        if (answer.empty()){
-            enter();
+string lispify(string strg){
+    for ( int i=0; i<strg.length(); i++){
+        if (strg[i] == 's'){
+            strg.replace(i, 1, "th");
+        } 
+        else if (strg[i] == 'S'){
+            strg.replace(i, 1, "Th");
         }
-        else if (answer.find('!') != std::string::npos){
-            cout << "OMG! You don't say!!  " << answer << "!!!!!" << endl;
-            enter();
-        }
-        else if (answer == "what?" | answer == "why?"){
-            cout << "I'm sorry, I don't like questions that contain what or why." << endl;
-            enter();
-        }   
-        else if (answer.find('s') != std::string::npos){
-            cout << "Interethting. When did you thtop thtopping your thibilanth?" << endl;
-            lispify(answer);
-            enter();
-        }
-        cout << "    " << answer << endl;
-        cout << endl;
-        cout << endl;
-        
     }
+    return strg;
 }
 
 int main(){
-    enter();
+    cout << lispify("a cool squirrel kissed on the rad chair!");
 }
