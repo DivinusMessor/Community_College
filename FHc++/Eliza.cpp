@@ -46,7 +46,7 @@ string rotate_vowels(string strg){
 string lispify(string strg){
     for ( int i=0; i<6; i++){
         if (strg[i] == 's'){
-            strg.replace(i, 1, "th");;
+            strg.replace(i, 1, "th");
         } 
         else if (strg[i] == 'S'){
             strg.replace(i, 1, "Th");
@@ -61,36 +61,39 @@ void enter(){
     for (;;){
         string answer;
         getline(cin, answer);
+        
+        cout << "    " << answer << endl;
+        cout << endl;
+
         if (answer.empty()){
             enter();
         }
+        //cout << endl;
+
         else if (answer.find('!') != std::string::npos){
-            cout << "OMG! You don't say!!  " << answer << "!!!!!" << endl;
-            enter();
+            cout << "OMG! You don't say!! " << answer << "!!!!!" << endl;
+            //enter();
         }
         else if ((answer == "what?") | (answer == "why?")){
             cout << "I'm sorry, I don't like questions that contain what or why." << endl;
-            enter();
+            //enter();
         }   
         else if (answer.find('s') != std::string::npos){
             cout << "Interethting. When did you thtop thtopping your thibilanth?" << endl;
-            cout << lispify(answer) << "! Sheesh! Now what?"  << endl;
-            enter();
+            cout << lispify(answer) << "! Sheesh! Now what"  << endl;
+            //enter();
         }
         else if ((answer == "bye") | (answer == "quit") | (answer == "Bye") | (answer == "Quit")){
             cout << "Ok Bye. Nice being a force of change in your life." << endl;
             break;
         }
-        if (rand() % 10 >= 8){
+        else if (rand() % 10 >= 8){
             cout << "Huh? Why do you say: " << answer << "?" << endl;
         }
         
         else{
             cout << rotate_vowels(answer) << "?" << endl;
         }
-        cout << "    " << answer << endl;
-        cout << endl;
-        cout << endl;
         
     }
 }
