@@ -7,11 +7,11 @@
  
 #ifndef Eliza_h 
 #define Eliza_h 
+#include <string>
  
 // TODO - place your Eliza function declarations here 
 void enter();
-string strg;
-string lispify(strg);
-string rotate_vowels(strg)
+std::string rotate_vowels(std::string strg);
+std::string lispify(std::string strg);
  
 #endif /* Eliza_h */
