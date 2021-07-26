@@ -95,10 +95,10 @@ void enter(){
     }
 }
 
-int main(){
-    //cout << rotate_vowels("hats");
-    //cout << lispify("sixSix");
-    //cout << lispify("sAXsACKssS");
-    //cout << rotate_vowels("that's really cool");
-    enter();
-}
+// int main(){
+//     //cout << rotate_vowels("hats");
+//     //cout << lispify("sixSix");
+//     //cout << lispify("sAXsACKssS");
+//     //cout << rotate_vowels("that's really cool");
+//     enter();
+// }

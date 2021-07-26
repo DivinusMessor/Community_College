@@ -9,5 +9,9 @@
 #define Eliza_h 
  
 // TODO - place your Eliza function declarations here 
+void enter();
+string strg;
+string lispify(strg);
+string rotate_vowels(strg)
  
 #endif /* Eliza_h */
