@@ -15,6 +15,7 @@ string lispify(string strg){
     return strg;
 }
 
+
 int main(){
-    cout << lispify("a cool squirrel kissed on the rad chair!");
+    cout << lispify("a handthome buthh leaned at a red mat!");
 }

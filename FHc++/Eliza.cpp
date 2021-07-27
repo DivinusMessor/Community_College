@@ -22,7 +22,7 @@ string rotate_vowels(string strg){
     //https://stackoverflow.com/questions/21358215/how-to-compare-string-to-multiple-char-c
     // go to that website and see how its done to switch
     //char vowels[5] = {'a','e','i','o','u'}; 
-    for ( int i=0; i<6; i++){
+    for (unsigned int i=0; i<strg.length(); i++){
         if (strg[i] == 'a') {
             strg[i] = 'e';
         }
@@ -80,7 +80,7 @@ void enter(){
         }   
         else if (answer.find('s') != std::string::npos){
             cout << "Interethting. When did you thtop thtopping your thibilanth?" << endl;
-            cout << lispify(answer) << "! Sheesh! Now what"  << endl;
+            cout << lispify(answer) << "! Sheesh! Now what?"  << endl;
             //enter();
         }
         else if ((answer == "bye") | (answer == "quit") | (answer == "Bye") | (answer == "Quit")){
