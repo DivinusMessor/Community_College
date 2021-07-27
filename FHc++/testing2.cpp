@@ -3,19 +3,16 @@
 using namespace std;
 // Testing on how to do the vowels
 
-string lispify(string strg){
-    for ( int i=0; i<strg.length(); i++){
-        if (strg[i] == 's'){
-            strg.replace(i, 1, "th");
-        } 
-        else if (strg[i] == 'S'){
-            strg.replace(i, 1, "Th");
-        }
+string make_a_name(int len){
+    string temp = "hi";
+    char vowels[] = {'a', 'e', 'i', 'o', 'u'};
+    char constants[] = {'b','c','d','f','g','h','j','k','l','m','n','p','q','r','s','t','v','w','x','y','z'};
+    for (int i=0; i<10; i++){
+        cout << constants[i];
     }
-    return strg;
+    return temp;
 }
 
-
 int main(){
-    cout << lispify("a handthome buthh leaned at a red mat!");
+    cout << make_a_name(5);
 }
