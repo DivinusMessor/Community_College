@@ -59,3 +59,23 @@ void Pet::get_n_pets(size_t n, std::vector<Pet>& pets, int name_len) {
  
         // TODO - make and set a name of the requested length 
         // TODO - adjust prev_id as necessary
+    } 
+} 
+ 
+string Pet::make_a_name(int len) { 
+    // TODO - Your code here 
+} 
+ 
+// Optional EC points 
+// Global helpers 
+bool operator==(const Pet& pet1, const Pet& pet2) { 
+    // TODO - Your code here 
+} 
+ 
+bool operator!=(const Pet& pet1, const Pet& pet2) { 
+    // TODO - Your code here 
+} 
+ 
+ostream& operator<<(ostream& os, const Pet& pet) { 
+    // TODO - Your code here 
+} 
