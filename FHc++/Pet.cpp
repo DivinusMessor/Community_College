@@ -1,6 +1,6 @@
 //  Pet.cpp 
 //  2a-Lab-06-Pets 
-// 
+// a calculating crow
  
 #include <iostream> 
 #include <sstream> 
