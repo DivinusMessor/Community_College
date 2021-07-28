@@ -1,14 +1,19 @@
 #include <iostream>
-#include<string>
+#include <string>
+
 using namespace std;
 // Testing on how to do the vowels
 
 string make_a_name(int len){
+    string n_name = "";
     string temp = "hi";
     string vowels = "aeiou";
     string constants = "bcdfghjklmnpqrstvwxyz";
-    int rand_num = rand();
-    cout << rand_num << endl;
+    int choice = rand() % 2;
+    if (choice == 0){
+        
+    } 
+    cout << choice;
     return temp;
 }
 
