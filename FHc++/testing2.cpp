@@ -9,12 +9,11 @@ string make_a_name(int len){
     string temp = "hi";
     string vowels = "aeiou";
     string constants = "bcdfghjklmnpqrstvwxyz";
-    int choice = rand() % 2;
-    if (choice == 0){
-        for (int i=0; i<)
+    int counter = 0;
+    // Going to add a counter to swtich between the vowels and consts
+    if (rand() % 2 == 0){
+        for 
     }
-    cout << choice;
-    return temp;
 }
 
 int main(){
