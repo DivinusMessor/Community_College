@@ -11,9 +11,12 @@ string make_a_name(int len){
     string constants = "bcdfghjklmnpqrstvwxyz";
     int counter = 0;
     // Going to add a counter to swtich between the vowels and consts
-    if (rand() % 2 == 0){
-        for 
+    if (rand() % 2 != 0){
+        for (int i = 0; i < constants.length(); i++){
+            cout << constants[i];
+        }
     }
+    return temp;
 }
 
 int main(){
