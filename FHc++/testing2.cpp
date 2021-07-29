@@ -11,8 +11,8 @@ string make_a_name(int len){
     string constants = "bcdfghjklmnpqrstvwxyz";
     int choice = rand() % 2;
     if (choice == 0){
-        
-    } 
+        for (int i=0; i<)
+    }
     cout << choice;
     return temp;
 }
