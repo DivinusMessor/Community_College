@@ -13,7 +13,7 @@ string make_a_name(int len){
     // Going to add a counter to swtich between the vowels and consts
     if (rand() % 2 != 0){
         for (int i = 0; i < constants.length(); i++){
-            cout << constants[i];
+            cout << ( rand() % (10 + 1 ) ) << endl;
         }
     }
     return temp;
